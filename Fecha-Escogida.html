@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>APP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="icon" href="img/logo.png">
+
+    </head>
+    <body>
+      <div class="botones-top">
+          <div alt="home">
+              <a href="index.html"> <i class="fas fa-home home"></i> </a>
+          </div>
+          <div alt="Information">
+            <i class="fas fa-info-circle info" onclick="CalendarioAlert()"></i>
+          </div>
+      </div>
+
+      <div class="content" id="app">           
+          <div alt="logo">
+              <img src="img/logo.png" alt="Logo de la pagina" class="logo-img">
+          </div>   
+          <div>
+              <p class="title">NYSL Game Information</p>
+          </div>
+          
+          <div class="tabla1">
+              <table>
+                  <tr style="text-decoration:underline; text-align: left;">
+                    <th scope="col" style="text-align: center;">SEPTEMBER</th>
+                    <th scope="col">Teams</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Times</th>
+                  </tr>
+                  <tr v-for="x in september">
+                    <td style="text-align: center;" >{{x.fecha}}</td>
+                    <td>{{x.local}} and {{x.visitante}}</td>
+                    <td>{{x.location}}</td>
+                    <td>{{x.hora}}</td>
+                  </tr>
+              </table>
+          </div>
+
+          <div class="tabla2">
+              <table>
+                  <tr style="text-decoration:underline; text-align: left;">
+                    <th scope="col" style="text-align: center;">OCTOBER</th>
+                    <th scope="col">Teams</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Times</th>
+                  </tr>
+                  <tr v-for="x in october">
+                    <td style="text-align: center;" >{{x.fecha}}</td>
+                    <td>{{x.local}} and {{x.visitante}}</td>
+                    <td>{{x.location}}</td>
+                    <td>{{x.hora}}</td>
+                  </tr>
+              </table>
+          </div>
+
+      </div>
+
+      <div alt="El margen de pie de pagina" class="margen"></div>
+
+      <!-- Vue -->
+      <script src="https://unpkg.com/vue/dist/vue.js"></script>
+      <script src = "https://cdn.jsdelivr.net/npm/vue"></script>
+      <!-- JS -->
+      <script type="text/javascript" src = "filtro-Equipo-Partidos.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+        id="cordova.plugins.diagnostic.example"
+        version="3.2.0"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>NYSL</name>
+    <description>
+        APP para representar tabla con JSON. 
+    </description>
+    <author email="EMAIL" href="UN ENLACE">
+        DATOS PERSONALES
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+
+    <icon src="img/logo.png"/>
+  
+    <preference name="Fullscreen" value="false" />
+    <preference name="phonegap-version" value="cli-6.5.0" /> <!-- Phonegap Build only -->
+
+    <plugin name="cordova-plugin-whitelist" version="*" />
+    <plugin name="cordova-plugin-device" version="*" />
+    <plugin name="cordova-custom-config" version="*" />
+    <plugin name="cordova-plugin-geolocation" version="2.1.0" />
+    <plugin name="cordova-plugin-camera" version="2.1.0" />
+    <plugin name="cordova-plugin-device-motion" spec="1.2.3" />
+    <plugin name="https://github.com/wildabeast/BarcodeScanner.git" /> 
+
+    <plugin name="cordova.plugins.diagnostic" version="*" />
+
+    <platform name="android">
+        <plugin name="cordova-plugin-file" version="*" />
+
+        <preference name="android-build-tool" value="gradle" /> <!-- Phonegap Build only -->
+        
+        <preference name="android-minSdkVersion" value="14" />
+        <preference name="android-targetSdkVersion" value="23" />
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+            <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+            <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+            <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+            <uses-permission android:name="android.hardware.sensor.accelerometer" android:required="true" />
+        </config-file>
+    </platform>
+</widget>

@@ -1,0 +1,207 @@
+
+
+/* CSS de la Estructura general ******************************************************************************************/
+
+body{
+    background-color: #132418;
+    padding: 0;
+    min-width: 99vw;
+    min-height: 99vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.margen{
+    margin-top: 10%;
+}
+
+/* Botones de arriba *************************************************************************************************** */
+
+.home{
+    color: antiquewhite;
+    font-size: 35px;
+    margin: 30px;
+    float: left;
+}
+
+.info{
+    color: antiquewhite;
+    font-size: 35px;
+    margin: 30px;
+    margin-top: 15px;
+    float: right;
+}
+
+
+
+/* Cuerpo de la APP**************************************************************************************************** */
+
+
+.content {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo-img {
+    
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+p.title {
+    font-family: 'Fredericka the Great', cursive;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2px;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-bottom: 10px;
+}
+
+p.welcome {
+    font-family: 'Fredericka the Great', cursive;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+/* Iconos ************************************************************************************************************** */
+
+
+.iconos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.style{
+    color: antiquewhite;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.style-back{
+    color: antiquewhite;
+    font-size: 35px;
+    margin: 30px;
+    float: left;
+}
+
+/* Pagina Escoger Ubicaciones  ***************************************************************************************** */
+
+.botones-ubi{
+    width:60%;
+    align-self: center;
+    font-family:'Fredericka the Great';
+    background: rgb(39, 80, 39);
+    color: white;
+    font-size:18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 20%;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pagina Escoger Equipos  *********************************************************************************************** */
+
+.botones-team{
+    width:20%;
+    align-self: center;
+    font-family:'Fredericka the Great';
+    background: rgb(39, 80, 39);
+    color: white;
+    font-size:18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 40%;
+}
+
+/* Pagina Escoger Fecha  *********************************************************************************************** */
+
+input[type=date] {
+    padding:5px;
+    margin-top:20px;
+}
+
+
+input[type=submit] {
+    padding:5px;
+    margin-top:20px;
+    margin-left: 20%;
+}
+
+.contenido-fecha{
+    margin-left: 30%;
+}
+
+/* Pagina ventana select  *********************************************************************************************** */
+
+.select{
+    font-family:'Fredericka the Great';
+    background: rgb(39, 80, 39);
+    color: white;
+    font-size: 14px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 35%;
+}
+
+/* Pagina TABLA COMPLETA  *********************************************************************************************** */
+
+.tabla1{
+    margin-top: 35px;
+}
+
+.tabla1 table{
+    font-family:'Fredericka the Great';
+    background: rgb(39, 80, 39);
+    color: white;
+    font-size: 11px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.tabla1 th{  
+    width: 20%;
+    margin-top: 20px;
+}
+
+
+.tabla2{
+    margin-top: 10px;
+}
+
+.tabla2 table{
+    font-family:'Fredericka the Great';
+    background: rgb(39, 80, 39);
+    color: white;
+    font-size: 11px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.tabla2 th{  
+    width: 20%;
+    margin-top: 20px;
+}
+
